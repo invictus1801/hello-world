@@ -1,0 +1,64 @@
+//This code snippet would implement Json-LD code for schema markups
+
+// The following code snippet is for Email and Telephone in the following page
+// https://www.iciciprulife.com/contact-us.html 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "email": "buyonline@iciciprulife.com",
+  "telephone": "1860 266 7766"
+}
+</script>
+
+
+//The following code snippet is for marking up Parent Organization in the following page
+
+// https://www.iciciprulife.com/about-us/company-overview.html
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+  "name": "ICICI Prudential",
+  "url": "https://iciciprulife.com",
+  "parentOrganization": 
+  {
+    "@type": "Organization",
+    "name": "ICICI Bank",
+    "url": "www.icicibank.com/"
+  }
+}
+</script>
+
+
+//This code snippet is for implementing product schema on all product pages
+
+<script type="application/ld+json">
+{
+  "@context":"http://schema.org",
+  "@id":"https://www.iciciprulife.com/term-insurance-plans/iprotect-smart-term-plan.html",
+  "@type":"ItemPage",
+  "mainEntity":{
+    "@type":"Product",
+    "name":"iProtect Smart",
+    "description":"A Term Insurance Plan Voted Product of the Year 2016",
+    "image":"https://www.iciciprulife.com/content/icici-prudential-life-insurance/term-insurance-plans/iprotect-smart-term-plan/_jcr_content/contentpar/product_banner.img.jpg/1464767395154.jpg",
+    "url":"https://www.iciciprulife.com/term-insurance-plans/iprotect-smart-term-plan.html",
+    "offers":{
+      "@type":"Offer",
+      "priceCurrency":"RS",
+      "price":"2400.00",
+        "offeredBy":{
+          "@type":"Organization",
+          "name":"ICICI Prudential",
+          "logo":"https://www.iciciprulife.com/content/icici-prudential-life-insurance/_jcr_content/headerpar/header_sightly/navHeader.img.png/1470186878858.png",
+          "url":"http://iciciprulife.com",
+          "sameAs":["https://twitter.com/iciciprulife","https://www.facebook.com/ICICIPruLife","https://plus.google.com/+ICICIPruLife/about"]
+        }
+    }
+  }
+}
+</script>
+
+
